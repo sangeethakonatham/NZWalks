@@ -7,7 +7,7 @@ namespace NZWalks.API.Repositories
         //IEnumerable<Region> GetAll();
        // make below to asynchronous
         Task<IEnumerable<Region>> GetAllAsync();//change to async
-        Task<Region>GetAsync(Guid id);//creating single region
+        Task<Region>GetAsync(Guid id);//creating single region Repository
         Task<Region>AddAsync(Region region);    //adding region
         Task<Region> DeleteAsync(Guid id); //deleteing region
 

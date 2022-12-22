@@ -19,8 +19,14 @@ builder.Services.AddDbContext<NZWalksDbContext>(Options =>
 //using dependency injection injecting IregionRepositoryinterface into services 
 builder.Services.AddScoped<IRegionRepository,RegionRepository>();
 
+// Injecting WalkRepository into services application
+builder.Services.AddScoped<IWalkRepository,WalkRepository>();
+
 //using automapper injecting RegionsProfile into services
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
+
+
 
 var app = builder.Build();
 
